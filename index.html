@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Inline CSS for styling the header image */
+        header img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Set all text color to white */
+        body, h1, h2, p, a, li, footer {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/Users/kvanc99peltek/Desktop/KPWebsite/Profile.png" alt="Header Image">
+        <h1>Hello World, I'm Kivanc Peltek known as KP</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an aspiring Software Engineer passionate about creating awesome products.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Check out some of my latest projects.</p>
+        <!-- Add your portfolio items here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <button id="showEmailButton">Show Email</button>
+        <p id="emailAddress" style="display: none;">kivanc.peltek@temple.edu</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 KP's Personal Website</p>
+    </footer>
+
+    <script>
+        // Get references to the button and email address paragraph
+        const showEmailButton = document.getElementById('showEmailButton');
+        const emailAddress = document.getElementById('emailAddress');
+
+        // Add a click event listener to the button
+        showEmailButton.addEventListener('click', function() {
+            // Toggle the display of the email address paragraph
+            if (emailAddress.style.display === 'none') {
+                emailAddress.style.display = 'block';
+            } else {
+                emailAddress.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
