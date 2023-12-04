@@ -1,4 +1,83 @@
-body {
-    background-color: black;
-    color: white; /* You may want to change text color for better contrast */
+header {
+  text-align: center;
+  position: relative;
+  padding-top: 350px; /* Adjust if the height of your image changes */
 }
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: auto;
+  z-index: 10;
+}
+
+/* Set the body's text to white and align text to center for default */
+body {
+  background-color: black;
+  color: white;
+  text-align: center; /* Center text by default */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  font-family: Arial, sans-serif; /* Example font */
+}
+
+/* Centering content within sections */
+section {
+  margin: 0 auto; /* Centers the section */
+  padding: 20px 0; /* Adds padding above and below section content */
+}
+
+/* Centering unordered list */
+ul {
+  list-style-type: none; /* Removes default list bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0 auto; /* Centers the menu */
+}
+
+ul li {
+  margin: 0 auto; /* Center each list item */
+}
+
+/* Styles for your circle image section, if it's separate from header img */
+#the-circle img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add this to center your footer content */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #333; /* Dark background for buttons */
+  border-radius: 50%; /* Circular border */
+  font-size: 24px; /* Adjust the size of the icon */
+  width: 50px; /* Size of the button */
+  height: 50px; /* Size of the button */
+  line-height: 50px; /* Center the icon vertically */
+  text-align: center; /* Center the icon horizontally */
+  transition: background-color 0.3s; /* Smooth transition for hover state */
+}
+
+.social-button.instagram:hover { background-color: #E1306C; }
+.social-button.linkedin:hover { background-color: #0077B5; }
+.social-button.twitter:hover { background-color: #1DA1F2; }
+
+.social-button i {
+  /* Ensures icons are centered in the buttons */
+  line-height: inherit; /* Aligns icon's line-height with the button */
+}
+
+/* Additional responsive positioning may be needed depending on other header elements */
