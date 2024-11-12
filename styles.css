@@ -1,3 +1,4 @@
+/* Header Styling */
 header {
   text-align: center;
   position: relative;
@@ -9,66 +10,79 @@ header img {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 250px; /* Reduced size for a more refined look */
   height: auto;
   z-index: 10;
+  border-radius: 50%; /* Makes image circular */
+  border: 5px solid #fff; /* White border for contrast */
 }
 
-/* Set the body's text to white and align text to center for default */
+/* General Body Styling */
 body {
-  background-color: black;
-  color: white;
-  text-align: center; /* Center text by default */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  font-family: Arial, sans-serif; /* Example font */
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  color: #f0f0f0; /* Light gray text for softer contrast */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Centering content within sections */
+/* Section Styling */
 section {
-  margin: 0 auto; /* Centers the section */
-  padding: 20px 0; /* Adds padding above and below section content */
+  max-width: 800px; /* Limits width for readability */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Centering unordered list */
+/* List Styling */
 ul {
-  list-style-type: none; /* Removes default list bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0 auto; /* Centers the menu */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul li {
-  margin: 0 auto; /* Center each list item */
+  margin: 10px 0; /* Adds spacing between list items */
+  font-size: 18px; /* Larger font for readability */
+  line-height: 1.5;
 }
 
-/* Styles for your circle image section, if it's separate from header img */
+/* Circle Image Styling */
 #the-circle img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+  border-radius: 10px; /* Slight rounding for a modern touch */
 }
 
-/* Add this to center your footer content */
+/* Footer Styling */
 footer {
   text-align: center;
   padding: 20px 0;
+  color: #888; /* Subtle color for footer text */
+  font-size: 14px;
 }
 
+/* Social Media Button Styling */
 .social-button {
   display: inline-block;
   margin: 5px;
-  padding: 8px 15px;
+  padding: 10px;
   text-decoration: none;
   color: white;
-  background-color: #333; /* Dark background for buttons */
-  border-radius: 50%; /* Circular border */
-  font-size: 24px; /* Adjust the size of the icon */
-  width: 50px; /* Size of the button */
-  height: 50px; /* Size of the button */
-  line-height: 50px; /* Center the icon vertically */
-  text-align: center; /* Center the icon horizontally */
-  transition: background-color 0.3s; /* Smooth transition for hover state */
+  background-color: #333;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s; /* Adds smooth animation */
+}
+
+.social-button:hover {
+  transform: scale(1.1); /* Enlarge on hover for effect */
 }
 
 .social-button.instagram:hover { background-color: #E1306C; }
@@ -76,8 +90,62 @@ footer {
 .social-button.twitter:hover { background-color: #1DA1F2; }
 
 .social-button i {
-  /* Ensures icons are centered in the buttons */
-  line-height: inherit; /* Aligns icon's line-height with the button */
+  line-height: inherit;
+}
+/* Project Section Styling */
+section#projects {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2c2c2c; /* Dark gray background to distinguish section */
+  border-radius: 8px; /* Rounded corners for a modern touch */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
 }
 
-/* Additional responsive positioning may be needed depending on other header elements */
+section#projects h2 {
+  color: #f0f0f0; /* Light color for section title */
+  font-size: 28px; /* Large title for emphasis */
+  border-bottom: 2px solid #555; /* Adds a subtle divider */
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+section#projects ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0;
+}
+
+section#projects ul li {
+  background-color: #3a3a3a; /* Slightly lighter background for list items */
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners for list items */
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.5;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+section#projects ul li:hover {
+  background-color: #444; /* Darkens background on hover */
+}
+
+section#projects ul li a {
+  color: #4DB8FF; /* Bright link color for projects */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+section#projects ul li a:hover {
+  color: #ffffff; /* Link color on hover */
+}
+
+/* Optional styling for project list icons */
+section#projects ul li::before {
+  content: "•"; /* Adds a bullet icon */
+  color: #4DB8FF; /* Matches link color */
+  display: inline-block;
+  width: 1em;
+  margin-right: 10px;
+}

@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KP's Personal Website</title>
+    <title>Kivanc Peltek | Software Engineer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Add Font Awesome to your project -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-    /* My first Github push */
+        /* Styling adjustments */
         .responsive-headline {
-            font-size: 80.1px;
-            margin: 0; /* Adjust or remove margin as needed */
-            font-family: 'Arial', sans-serif; /* Add the font-family if needed */
-            font-weight: bold; /* Make the text bold */
-            /* Add any other styling properties that were originally set */
+            font-size: 60px;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
         }
 
-        /* Add styles for your social media buttons here or in the external styles.css */
+        /* Social media button styling */
         .social-media-links {
             position: absolute;
             top: 0;
             left: 0;
             padding: 10px;
-            z-index: 20; /* Ensure it's above other elements */
+            z-index: 20;
         }
 
         .social-button {
@@ -30,16 +28,14 @@
             padding: 8px 15px;
             text-decoration: none;
             color: white;
-            background-color: #333; /* Dark background for buttons */
-            border-radius: 50%; /* Circular border */
+            background-color: #333;
+            border-radius: 50%;
             transition: background-color 0.3s;
         }
 
         .social-button.instagram:hover { background-color: #E1306C; }
         .social-button.linkedin:hover { background-color: #0077B5; }
         .social-button.twitter:hover { background-color: #1DA1F2; }
-
-        /* ... Rest of your CSS ... */
     </style>
 </head>
 <body>
@@ -56,55 +52,59 @@
     </div>
     
     <header>
-        <!-- Centered within the header using CSS above -->
-        <img src="Profile.png" alt="Header Image">
-        <h1 class="responsive-headline">Hello I am Kivanc Peltek!</h1>
-        <h1>International Man of Adventure</h1>
+        <img src="Profile.png" alt="Profile Picture">
+        <h1 class="responsive-headline">Kivanc Peltek</h1>
+        <h3>Software Engineer | Product Innovator | CS Major at Temple University</h3>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Computer Science Major Interested in Solving Bigger Problems <br> <br> I specialize in the following: <br> <b>Entrepreneurship,</b> <br> <b>Serial Hacking,</b> <br> <b>Private Aircrafts,</b> <br> <b>Wars,</b>  <br> <b>Free International Travel,</b> <br><b>Professional Debate,</b> <br><b>Mental Athlete,</b> <br><b>Global Networks.</b><br>
-        </p>
+        <p>I am a Computer Science major with a passion for developing impactful digital solutions. My experience includes building scalable products in medical tourism, AI-driven automation tools, and custom web applications. With expertise in full-stack development, API integration, and agile methodologies, I’m driven to design user-centered products that address real-world challenges.</p>
+        <p>Currently, I mentor student entrepreneurs in software development, emphasizing scalable design, best data practices, and agile project management. My goal is to create seamless and efficient user experiences while tackling complex technical challenges.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3><a href="https://example.com/relyvin" target="_blank">Relyvin:</a></h3>
+            <p>Over the summer, I launched a medical tourism startup called Relyvin, a platform designed to connect international clients with high-quality healthcare providers abroad. The platform was built from scratch, integrating user-centered design principles to enhance the client experience and utilizing automation tools to streamline partner engagement. Through a network of clinics overseas, we were able to quickly establish connections in key locations, providing clients with reliable options for medical care in other countries. Within the first three months, we scaled to over 5,000 monthly active users and generated $8,000 in revenue-all achieved on a $0 marketing budget.<br><br> Tech Stack: React.js, TypeScript, Node.js, Express, MongoDB, Python, Selenium, Twilio, AWS EC2, Docker, Celery, RabbitMQ</p>
+        </div>
+        <div class="project-card">
+            <h3><a href="https://example.com/dropai" target="_blank">DropAI:</a></h3>
+            <p>At Hack MIT, my team and I created DropAI, an AI-powered email automation tool designed to streamline client communications and document management. This tool autonomously handles routine inquiries, initiates document signing, and completes repetitive administrative tasks. By automating these processes, DropAI saves users an estimated 21+ hours each week. With a focus on high-quality responses and fast processing, DropAI optimizes workflow efficiency for busy professionals.<br><br>Tech Stack: Python, Flask, OpenAI API, HTML, JavaScript</p>
+        </div>
+        <div class="project-card">
+            <h3><a href="" target="_blank">Go Follow Yourself:</a></h3>
+            <p>This started as a personal project born from my frustration with Instagram. I realized I was following many accounts that weren't following me back, and keeping track of that was tedious. So, I built a tool to automate it. The tool scrapes Instagram to identify unfollowers and then sends monthly email lists with their usernames.
+
+                What surprised me was how quickly others got interested. After I shared it with a few friends, word spread, and soon my classmates were asking for access. Within a week, it had over 100 users, all of whom appreciated the simplicity and usefulness of the tool. Building this project taught me a lot about scaling a small tool to meet unexpected demand, as well as handling privacy and automation with real-time user feedback.<br><br> Tech Stack: Python, Selenium</p>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <button id="showEmailButton">Show Contact</button>
-        <p id="emailAddress" style="display: none;">kivanc07peltek@gmail.com </p>
+        <p>Feel free to reach out to discuss opportunities, or connect with me on LinkedIn!</p>
+        <button id="showEmailButton">Show Email</button>
+        <p id="emailAddress" style="display: none;">kivanc07peltek@gmail.com</p>
     </section>
-    
-    <!-- The Circle Map-->
-    <section id="/Users/kvanc99peltek/Desktop/KPWebsite/circle.jpg">
-        <img src="the-circle.jpg" alt="The Circle" style="max-width:100%;height:auto;">
-    </section>
-    
-
-  
 
     <footer>
-        <p>&copy; 2023 KP's Personal Website</p>
+        <p>&copy; 2024 Kivanc Peltek | Software Engineer</p>
     </footer>
 
     <script>
-        // Get references to the button and email address paragraph
+        // Toggle email display on button click
         const showEmailButton = document.getElementById('showEmailButton');
         const emailAddress = document.getElementById('emailAddress');
-
-        // Add a click event listener to the button
         showEmailButton.addEventListener('click', function() {
-            // Toggle the display of the email address paragraph
-            if (emailAddress.style.display === 'none') {
-                emailAddress.style.display = 'block';
-            } else {
-                emailAddress.style.display = 'none';
-            }
+            emailAddress.style.display = emailAddress.style.display === 'none' ? 'block' : 'none';
         });
     </script>
 </body>
